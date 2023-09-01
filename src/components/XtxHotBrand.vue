@@ -14,31 +14,7 @@
             </div>
             <div class="bd">
               <ul>
-                <li>
-                  <a href="#">
-                    <img src="@/assets/images/hot1.png" alt="" />
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img src="@/assets/images/hot2.png" alt="" />
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img src="@/assets/images/hot3.png" alt="" />
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img src="@/assets/images/hot4.png" alt="" />
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img src="@/assets/images/hot5.png" alt="" />
-                  </a>
-                </li>
+                <BaseBrandsItem v-for="item in 5" :key="item"></BaseBrandsItem>
               </ul>
             </div>
           </div>
@@ -91,10 +67,4 @@ export default {
   display: flex;
   justify-content: space-between;
 }
-
-.hot .bd li {
-  width: 244px;
-  height: 306px;
-}
-
 </style>
